@@ -6,6 +6,7 @@
     <title>Unity WebGL Player | Drunk driving sim</title>
     <script src="Build/UnityLoader.js"></script>
     <script>
+      UnityLoader.compatibilityCheck=function(e,t,r){t();};
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Builds.json");
     </script>
   </head>
