@@ -1,6 +1,6 @@
 {
-"companyName": "Mendez Fuel",
-"productName": "Mendez Fuel Driver Game",
+"companyName": "DefaultCompany",
+"productName": "Drunk driving sim",
 "productVersion": "1.0",
 "dataUrl": "Builds.data.unityweb",
 "wasmCodeUrl": "Builds.wasm.code.unityweb",
