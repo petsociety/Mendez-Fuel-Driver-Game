@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Drunk driving sim</title>
+    <title>Unity WebGL Player | Game</title>
   </head>
   <body style="text-align: center">
     <canvas id="unity-canvas" style="width: 1080px; height: 1920px; background: #231F20"></canvas>
-    <script src="Build/Builds.loader.js"></script>
+    <script src="Build/MF Game 1.1.2.loader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Builds.data.br",
-        frameworkUrl: "Build/Builds.framework.js.br",
-        codeUrl: "Build/Builds.wasm.br",
+        dataUrl: "Build/MF Game 1.1.2.data",
+        frameworkUrl: "Build/MF Game 1.1.2.framework.js",
+        codeUrl: "Build/MF Game 1.1.2.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "Drunk driving sim",
-        productVersion: "1.0",
+        companyName: "Mendez Fuel",
+        productName: "Game",
+        productVersion: "1.1.2",
       });
     </script>
   </body>
