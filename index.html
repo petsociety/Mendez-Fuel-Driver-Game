@@ -4,35 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Drunk driving sim</title>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      UnityLoader.compatibilityCheck=function(e,t,r){t();};
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Builds.json");
-    </script>
   </head>
-  <body>
-    <div id="unityContainer" style="width: 1080px; height: 1920px; margin: auto"></div>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1080px; height: 1920px; background: #231F20"></canvas>
+    <script src="Build/Builds.loader.js"></script>
     <script>
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAPLTUXrLvG8eqoN8Q5U2xtevYRoM56bkU",
-    authDomain: "mendez-fuel-app.firebaseapp.com",
-    databaseURL: "https://mendez-fuel-app-default-rtdb.firebaseio.com",
-    projectId: "mendez-fuel-app",
-    storageBucket: "mendez-fuel-app.appspot.com",
-    messagingSenderId: "81757628132",
-    appId: "1:81757628132:web:97556f1d3e2b25dc52eef1",
-    measurementId: "G-5TG25LY2WF"
-  };
-
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
-</script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Builds.data.br",
+        frameworkUrl: "Build/Builds.framework.js.br",
+        codeUrl: "Build/Builds.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Drunk driving sim",
+        productVersion: "1.0",
+      });
+    </script>
   </body>
 </html>
